@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        hikari:
+            driver-class-name: com.mysql.cj.jdbc.Driver
+            jdbc-url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+            username: kim9fe
+            password: 1234
+            connection-test-query: SELECT 1 FROM dual
+            maximum-pool-size: 10
+            auto-commit: false
+
+logging:
+    config: classpath:log4j2.yml
+
+server:
+    port: 8080
