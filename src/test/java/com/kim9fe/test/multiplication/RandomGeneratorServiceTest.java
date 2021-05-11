@@ -32,3 +32,4 @@ public class RandomGeneratorServiceTest {
         assertThat(randomFactors).allSatisfy(x -> {assertThat(x).isBetween(11, 100);});
     }
 }
+
